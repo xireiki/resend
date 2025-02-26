@@ -52,7 +52,7 @@ func UpdateEmail(client *resend.Client, id string, scheduled_at string) (*resend
 }
 
 func CancelEmail(client *resend.Client, id string) (*resend.CancelScheduledEmailResponse, error) {
-	canceled, err := client.Emails.Cancel("49a3999c-0ce1-4ea6-ab68-afcd6dc2e794")
+	canceled, err := client.Emails.Cancel(id)
 	if err != nil {
 		return nil, err
 	}
