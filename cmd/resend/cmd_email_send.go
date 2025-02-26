@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"log"
 
-	M "github.com/xireiki/resend/email"
-	"github.com/xireiki/resend/types"
 	"github.com/resend/resend-go/v2"
 	"github.com/spf13/cobra"
+	"github.com/xireiki/resend/log"
+	M "github.com/xireiki/resend/email"
+	"github.com/xireiki/resend/types"
 )
 
 var (
